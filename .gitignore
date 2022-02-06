@@ -10,6 +10,7 @@
 **/*-backups
 *~
 _autosave-*
+*auto_save*
 *.tmp
 *-save.pro
 *-save.kicad_pcb
@@ -28,4 +29,3 @@ fp-info-cache
 
 # For ergogen output files
 output/*
-

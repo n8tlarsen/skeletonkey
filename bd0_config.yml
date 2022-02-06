@@ -8,6 +8,7 @@ points:
           from: GND
           to: =keynet
         params:
+          hotswap: true
           reverse: true
           keycaps: true
   zones:
@@ -15,11 +16,11 @@ points:
       anchor:
       rows:
         bottom:
-          bind: 1
+          bind: [1,2,1,2]
         home:
-          bind: 1
+          bind: [1,2,1,2]
         top:
-          bind: 1
+          bind: [1,2,1,2]
       columns:
         outer:
           spread: cx
@@ -41,21 +42,18 @@ points:
             top:
               keynet: /pinky_top
         ring:
-          spread: cx+0.4
+          spread: cx+0.5
           rotate: -3
           stagger: 15
           row_overrides:
             bottom:
-              bind: 1
               keynet: /ring_bottom
             home:
-              bind: 1
               keynet: /ring_home
             top:
-              bind: [1,2,1,1]
               keynet: /ring_top
         middle:
-          spread: cx+0.4
+          spread: cx+0.5
           rotate: -3
           stagger: 5
           row_overrides:
@@ -91,25 +89,25 @@ points:
         rotate: -25
       rows:
         thumb:
-          bind: 1
+          bind: [1,2,1,2]
       columns:
         near:
           key:
-            orient: -90
+            rotate: -90
           row_overrides:
             thumb:
               keynet: /near_thumb
         home:
           spread: cy
           key:
-            orient: -90
+            rotate: -90
           row_overrides:
             thumb:
               keynet: /home_thumb
         far:
           spread: cy
           key:
-            orient: -90
+            rotate: -90
           row_overrides:
             thumb:
               keynet: /far_thumb
@@ -149,7 +147,7 @@ outlines:
         bound: false
 
 pcbs:
-  customkey:
+  bd0:
     outlines:
       bd:
         outline: cutout
