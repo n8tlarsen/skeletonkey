@@ -5,8 +5,8 @@ points:
       keychoc:
         type: choc
         nets:
-          from: GND
-          to: =keynet
+          from: =keynet
+          to: GND
         params:
           hotswap: true
           reverse: true
