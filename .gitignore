@@ -27,5 +27,5 @@ fp-info-cache
 *.xml
 *.csv
 
-# For ergogen output files
-output/*
+# Output files
+**/output/*
