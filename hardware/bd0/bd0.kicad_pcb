@@ -38,11 +38,11 @@
     (stackup
       (layer "F.SilkS" (type "Top Silk Screen"))
       (layer "F.Paste" (type "Top Solder Paste"))
-      (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01))
+      (layer "F.Mask" (type "Top Solder Mask") (color "Black") (thickness 0.01))
       (layer "F.Cu" (type "copper") (thickness 0.035))
       (layer "dielectric 1" (type "core") (thickness 1.51) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
       (layer "B.Cu" (type "copper") (thickness 0.035))
-      (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01))
+      (layer "B.Mask" (type "Bottom Solder Mask") (color "Black") (thickness 0.01))
       (layer "B.Paste" (type "Bottom Solder Paste"))
       (layer "B.SilkS" (type "Bottom Silk Screen"))
       (copper_finish "None")
@@ -743,7 +743,7 @@
   )
 
   (footprint "Conn_CUI_SJ-4351:CUI-SJ-43514-SMT-0" locked (layer "F.Cu")
-    (tedit 5EF1801D) (tstamp 7484592a-62b2-4a86-a0f1-280b6cc250fc)
+    (tedit 621AA531) (tstamp 7484592a-62b2-4a86-a0f1-280b6cc250fc)
     (at 271.1 165.2 180)
     (property "Sheetfile" "bd0.kicad_sch")
     (property "Sheetname" "")
@@ -807,7 +807,7 @@
       (net 29 "/SDA") (pinfunction "Ring1") (pintype "unspecified") (tstamp 2c405330-460d-4b33-8f6d-28a38617a5d9))
     (pad "4" smd rect locked (at -3.6 3.349999 180) (size 2.2 2.8) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 30 "/SCL") (pinfunction "Ring2") (pintype "unspecified") (tstamp 1b98ccf6-3ea9-4d5e-8f18-1b04a60b172d))
-    (model "eec.models/CUI_-_SJ-43514-SMT.step"
+    (model "${KIPRJMOD}/../lib/Conn_CUI_SJ-4351/Conn_CUI_SJ-4351.models/CUI_-_SJ-43514-SMT.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
