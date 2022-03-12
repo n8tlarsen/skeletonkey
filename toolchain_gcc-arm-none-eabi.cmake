@@ -1,0 +1,15 @@
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+
+set(GCC_PATH "C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin")
+set(CMAKE_C_COMPILER   ${GCC_PATH}/arm-none-eabi-gcc.exe CACHE INTERNAL "")
+set(CMAKE_CXX_COMPILER ${GCC_PATH}/arm-none-eabi-g++.exe CACHE INTERNAL "")
+set(CMAKE_ASM_COMPILER ${GCC_PATH}/arm-none-eabi-g++.exe CACHE INTERNAL "")
+set(CMAKE_ASM_FLAGS_INIT "-x assembler-with-cpp")
+set(CMAKE_EXE_LINKER_FLAGS_INIT "--specs=nosys.specs")
+set(CMAKE_OBJCOPY ${GCC_PATH}/arm-none-eabi-objcopy CACHE INTERNAL "")
+set(CMAKE_SIZE    ${GCC_PATH}/arm-none-eabi-size    CACHE INTERNAL "")
+
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)

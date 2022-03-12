@@ -29,4 +29,8 @@ fp-info-cache
 
 # Output files
 **/output/*
+**/build/*
 *.zip
+
+# DFPs
+**/pack/*
